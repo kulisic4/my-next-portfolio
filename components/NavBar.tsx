@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className="bg-sky-600 text-white p-4 flex justify-between items-center">
+    <nav className="bg-black text-white font-bold p-4 flex justify-between items-center">
       <div className="text-xl font-bold">
         <Link href="/">Danilo</Link>
       </div>
