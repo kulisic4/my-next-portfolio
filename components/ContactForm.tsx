@@ -9,9 +9,31 @@ export default function ContactForm() {
         message:"",
     })
 
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
-        e.preventDefault();
+    const [status, setStatus] = useState<string | null>(null)
+
+    const handleSubmit = async (e: React.FormEvent) => {
+       e.preventDefault();
+       setStatus("Sending...");
+
+      try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+      if (res.ok) {
+      setStatus("Message sent successfully ✅");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      const errorData = await res.json();
+      setStatus(`Error: ${errorData.message || "Failed to send"}`);
     }
+  } catch (err) {
+    setStatus("Error sending message ❌");
+    console.error(err);
+  }
+};
 
   return (
     <form onSubmit ={handleSubmit} className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
@@ -58,6 +80,7 @@ export default function ContactForm() {
       >
         Send Message
       </button>
+      {status && <p className="mt-4 text-center text-sm">{status}</p>}
     </form>
   );
 }
