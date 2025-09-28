@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import { Pagination } from 'swiper/modules'
 import { SwiperSlide, Swiper } from 'swiper/react'
 
@@ -42,7 +43,7 @@ const ProjectCarousel = () => {
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <h2 className="text-3xl font-extrabold text-gray-800 text-center">{project.title}</h2>
               <p className="text-black font-bold text-center">{project.description}</p>
-              <img
+              <Image
                  src={project.preview} 
                  className="w-full h-104 p-5 object-cover rounded-lg"
                  alt={project.title}
