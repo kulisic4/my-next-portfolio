@@ -10,7 +10,7 @@ const about = () => {
         <div>
           <p className="max-w-3xl mx-auto text-gray-800 text-lg leading-relaxed md:text-xl md:leading-relaxed mt-8">
             I am a Frontend Engineer based in Miami, FL, with experience in{" "}
-            <span class="font-semibold text-blue-600">
+            <span className="font-semibold text-blue-600">
               JavaScript, TypeScript, React, Next.js, CSS, Git, GitHub, and
               GraphQL
             </span>
