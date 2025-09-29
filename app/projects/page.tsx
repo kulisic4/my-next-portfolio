@@ -1,13 +1,17 @@
 import ProjectCarousel from '@/components/ProjectCarousel'
 import React from 'react'
 
-const projects = () => {
+const Projects = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-          <h1 className="text-4xl font-bold text-blue-600"></h1>
-          <ProjectCarousel />
+    <div className="font-sans flex flex-col items-center min-h-screen p-6 sm:p-20 gap-12">
+      <h1 className="text-2xl sm:text-4xl font-bold text-blue-600 text-center">
+        My Projects
+      </h1>
+      <div className="w-full max-w-4xl">
+        <ProjectCarousel />
+      </div>
     </div>
   )
 }
 
-export default projects
+export default Projects
