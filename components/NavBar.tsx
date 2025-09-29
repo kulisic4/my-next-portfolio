@@ -10,7 +10,6 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black text-white font-bold p-4 flex justify-between items-center relative z-50">
-      {/* Logo */}
       <div className="text-xl font-bold">
         <Link href="/">Danilo</Link>
       </div>
@@ -20,14 +19,14 @@ export default function Navbar() {
         <WeatherWidget />
       </div>
 
-      {/* Hamburger dugme */}
+      {/* Hamburger button */}
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Desktop linkovi */}
+      {/* Desktop links */}
       <ul className="hidden md:flex space-x-6">
         <Link href="/" className="hover:text-sky-200">Home</Link>
         <Link href="/about" className="hover:text-sky-200">About</Link>
@@ -35,7 +34,7 @@ export default function Navbar() {
         <Link href="/contact" className="hover:text-sky-200">Contact</Link>
       </ul>
 
-      {/* Mobile meni (dropdown) */}
+      {/* Mobile menu (dropdown) */}
       <AnimatePresence>
         {isOpen && (
           <motion.ul
