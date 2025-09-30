@@ -7,12 +7,12 @@ export default function Footer() {
     <footer className="bg-black text-white py-8 mt-12">
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
         
-        {/* Logo / ime */}
+        {/* Logo / name*/}
         <div className="text-lg font-bold">
           © {new Date().getFullYear()} Danilo Kulišić
         </div>
 
-        {/* Ikonice */}
+        {/* Icons */}
         <div className="flex gap-4">
           <a href="https://github.com/kulisic4" target="_blank" rel="noopener noreferrer" className="hover:text-sky-200">
             <Github />
