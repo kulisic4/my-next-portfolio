@@ -1,5 +1,5 @@
-import ProjectCarousel from '@/components/ProjectCarousel'
-import React from 'react'
+import ProjectCarousel from "@/components/ProjectCarousel";
+import React from "react";
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
         <ProjectCarousel />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
