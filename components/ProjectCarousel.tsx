@@ -14,6 +14,7 @@ type Project = {
 };
 
 const projects: Project[] = [
+
   {
     id: 1,
     title: "ACENDI APP",
@@ -33,6 +34,7 @@ const projects: Project[] = [
     previewType: "iframe",
     preview: "/Ourhealthyday-app.png",
   },
+  
 ];
 
 const ProjectCarousel = () => {
