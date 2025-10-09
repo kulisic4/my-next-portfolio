@@ -16,21 +16,22 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Our Healthy Day APP",
-    description:
-      "Web App for a healthy life! Explore the blog, sources, shop and more.",
-    link: "https://www.ourhealthyday.com/",
-    previewType: "iframe",
-    preview: "/Ourhealthyday-app.png",
-  },
-  {
-    id: 2,
     title: "ACENDI APP",
     description:
       "Mindfulness app for everyday meditations! Explore it on your computer, iOS or Android device!",
     link: "https://acendi.vercel.app/",
     previewType: "image",
     preview: "/Acendi-app.png",
+  },
+
+  {
+    id: 2,
+    title: "Our Healthy Day APP",
+    description:
+      "Web App for a healthy life! Explore the blog, sources, shop and more.",
+    link: "https://www.ourhealthyday.com/",
+    previewType: "iframe",
+    preview: "/Ourhealthyday-app.png",
   },
 ];
 
