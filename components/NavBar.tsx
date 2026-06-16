@@ -15,9 +15,9 @@ export default function Navbar() {
       </div>
 
       {/* Weather */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
+      {/*<div className="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
         <WeatherWidget />
-      </div>
+      </div>*/}
 
       {/* Hamburger button */}
       <div className="md:hidden">
