@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -14,23 +14,16 @@ export default function Footer() {
         {/* Icons */}
         <div className="flex gap-4">
           <a
-            href="https://github.com/kulisic4"
+            href="https://www.youtube.com/@kulisicd"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-sky-200"
           >
-            <Github />
+            <Youtube />
           </a>
+          
           <a
-            href="https://www.linkedin.com/in/danilo-kulisic4/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-sky-200"
-          >
-            <Linkedin />
-          </a>
-          <a
-            href="mailto:danilokulisic4@gmail.com"
+            href="/contact"
             className="hover:text-sky-200"
           >
             <Mail />
