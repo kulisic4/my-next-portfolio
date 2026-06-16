@@ -15,7 +15,7 @@ const About = () => {
         </h2>
 
         {/* DIVIDER */}
-        <div className="w-24 h-[2px] bg-black mt-6 mb-10"></div>
+        <div className="w-24 h-0.5 bg-black mt-6 mb-10"></div>
 
         {/* TEXT */}
         <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
