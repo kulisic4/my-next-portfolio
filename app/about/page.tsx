@@ -1,39 +1,66 @@
 import React from "react";
 
-const about = () => {
+const About = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col row-start-2 items-center">
-        <h1 className="text-4xl text-center font-bold text-blue-600">
-          About Danilo
+    <div className="font-sans min-h-screen flex items-center justify-center px-6 py-20 bg-white">
+      <main className="max-w-4xl w-full flex flex-col items-start">
+        
+        {/* TITLE */}
+        <h1 className="text-4xl md:text-5xl font-bold text-black">
+          Danilo Kulišić
         </h1>
-        <div>
-          <p className="max-w-3xl mx-auto text-gray-800 text-lg leading-relaxed md:text-xl md:leading-relaxed mt-8">
-            I am a Frontend Engineer based in Novi Sad, Serbia, with experience in{" "}
-            <span className="font-semibold text-blue-600">
-              JavaScript, TypeScript, React, Next.js, CSS, Git, GitHub, and
-              GraphQL
-            </span>
-            . I specialize in building high-quality, user-friendly applications
-            that solve real-world problems.
-            <br />
-            <br />
-            One of my key projects was{" "}
-            <span className="font-semibold text-blue-600">
-              “Our Healthy Day”
-            </span>
-            , a comprehensive app for purchasing health supplements and
-            mushrooms, where I led the integration of a blog and database
-            system. I am passionate about creating{" "}
-            <span className="font-semibold text-blue-600">
-              exceptional user experiences
-            </span>{" "}
-            and take pride in delivering results that exceed expectations.
-          </p>
+
+        <h2 className="mt-3 text-xl md:text-2xl text-gray-600 font-light">
+          Pianist & Piano Professor
+        </h2>
+
+        {/* DIVIDER */}
+        <div className="w-24 h-[2px] bg-black mt-6 mb-10"></div>
+
+        {/* TEXT */}
+        <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
+          I am a concert pianist and piano professor with experience in solo performance, chamber music, and pedagogy.
+          My work focuses on developing expressive, technically solid pianists and preparing students for
+          <span className="font-semibold text-black"> conservatory auditions, competitions, and professional careers</span>.
+        </p>
+
+        <br />
+
+        <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
+          I regularly perform solo and collaborative repertoire and work with students of different levels,
+          from beginners to advanced performers. My teaching approach combines
+          <span className="font-semibold text-black"> technical discipline, musical interpretation, and artistic independence</span>.
+        </p>
+
+        {/* HIGHLIGHTS */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 w-full">
+          
+          <div className="border border-gray-200 p-6">
+            <h3 className="font-semibold text-black mb-2">Performance</h3>
+            <p className="text-gray-600 text-sm">
+              Solo recitals, chamber music, and concert appearances.
+            </p>
+          </div>
+
+          <div className="border border-gray-200 p-6">
+            <h3 className="font-semibold text-black mb-2">Teaching</h3>
+            <p className="text-gray-600 text-sm">
+              Individual piano training for all levels with focus on results.
+            </p>
+          </div>
+
+          <div className="border border-gray-200 p-6">
+            <h3 className="font-semibold text-black mb-2">Focus</h3>
+            <p className="text-gray-600 text-sm">
+              Classical repertoire, interpretation, and audition preparation.
+            </p>
+          </div>
+
         </div>
+
       </main>
     </div>
   );
 };
 
-export default about;
+export default About;
