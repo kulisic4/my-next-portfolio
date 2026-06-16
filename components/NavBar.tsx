@@ -30,7 +30,7 @@ export default function Navbar() {
       <ul className="hidden md:flex space-x-6">
         <Link href="/" className="hover:text-sky-200">Home</Link>
         <Link href="/about" className="hover:text-sky-200">About</Link>
-        <Link href="/projects" className="hover:text-sky-200">Apps</Link>
+        <Link href="/projects" className="hover:text-sky-200">Editions</Link>
         <Link href="/contact" className="hover:text-sky-200">Contact</Link>
       </ul>
 
