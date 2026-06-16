@@ -47,7 +47,7 @@ export default function Navbar() {
           >
             <Link href="/" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/about" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="/projects" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Apps</Link>
+            <Link href="/projects" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Editions</Link>
             <Link href="/contact" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Contact</Link>
           </motion.ul>
         )}
