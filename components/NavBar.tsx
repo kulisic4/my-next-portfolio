@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="bg-black text-white font-bold p-4 flex justify-between items-center relative z-50">
       <div className="text-xl font-bold">
-        <Link href="/">Danilo</Link>
+        <Link href="/lessons">Online Piano Lessons</Link>
       </div>
 
       {/* Weather */}
