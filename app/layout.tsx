@@ -18,8 +18,42 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Danilo Kulisic Frontend Developer",
-  description: "Software Developer",
+  title: {
+    default: "Danilo Kulišić | Pianist & Piano Professor",
+    template: "%s | Danilo Kulišić",
+  },
+  description:
+    "Official website of pianist and piano professor Danilo Kulišić. Concert performances, online piano lessons, educational resources, sheet music and masterclasses.",
+
+  keywords: [
+    "Danilo Kulišić",
+    "Danilo Kulisic",
+    "Pianist",
+    "Piano Professor",
+    "Online Piano Lessons",
+    "Piano Teacher",
+    "Classical Piano",
+    "Concert Pianist",
+    "Piano Lessons",
+    "Music Education",
+    "Piano Masterclass",
+    "Sheet Music",
+  ],
+
+  authors: [{ name: "Danilo Kulišić" }],
+
+  openGraph: {
+    title: "Danilo Kulišić | Pianist & Piano Professor",
+    description:
+      "Official website of pianist and piano professor Danilo Kulišić. Concert performances, online piano lessons, educational resources and sheet music.",
+    type: "website",
+    locale: "en_US",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
