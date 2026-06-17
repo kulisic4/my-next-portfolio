@@ -72,6 +72,13 @@ export default function Navbar() {
               About
             </Link>
             <Link
+              href="/lessons"
+              className="hover:text-sky-200"
+              onClick={() => setIsOpen(false)}
+            >
+              Lessons
+            </Link>
+            <Link
               href="/projects"
               className="hover:text-sky-200"
               onClick={() => setIsOpen(false)}
