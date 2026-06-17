@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Lessons = () => {
   return (
@@ -30,8 +31,15 @@ const Lessons = () => {
           href="https://www.bilin.academy/en/teachers/657b5b81f2c6f4612790a383"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-8 inline-flex items-center justify-center border border-black px-8 py-4 text-black font-medium transition-colors duration-300 hover:bg-black hover:text-white"
+          className="mt-8 inline-flex items-center justify-center gap-3 border border-black px-8 py-4 text-black font-medium transition-colors duration-300 hover:bg-black hover:text-white"
         >
+          <Image
+            src="/logo.webp"
+            alt="Bilin Academy logo"
+            width={26}
+            height={26}
+            className="h-5 w-auto"
+          />
           Book a Lesson on Bilin Academy
         </a>
 
