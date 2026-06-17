@@ -4,7 +4,6 @@ const About = () => {
   return (
     <div className="font-sans min-h-screen flex items-center justify-center px-6 py-20 bg-white">
       <main className="max-w-4xl w-full flex flex-col items-start">
-        
         {/* TITLE */}
         <h1 className="text-4xl md:text-5xl font-bold text-black">
           Danilo Kulišić
@@ -19,22 +18,35 @@ const About = () => {
 
         {/* TEXT */}
         <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-          I am a concert pianist and piano professor with experience in solo performance, chamber music, and pedagogy.
-          My work focuses on developing expressive, technically solid pianists and preparing students for
-          <span className="font-semibold text-black"> conservatory auditions, competitions, and professional careers</span>.
+          I am a concert pianist and piano professor with experience in solo
+          performance, chamber music, and pedagogy. My work is dedicated to
+          helping students of all ages and levels develop technical excellence,
+          musical understanding, and artistic confidence—from adults
+          rediscovering the piano and enthusiasts learning for personal
+          enjoyment to advanced musicians preparing for
+          <span className="font-semibold text-black">
+            {" "}
+            conservatory auditions, competitions, and professional careers
+          </span>
+          .
         </p>
 
         <br />
 
         <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-          I regularly perform solo and collaborative repertoire and work with students of different levels,
-          from beginners to advanced performers. My teaching approach combines
-          <span className="font-semibold text-black"> technical discipline, musical interpretation, and artistic independence</span>.
+          Alongside my performing career, I work with students ranging from
+          complete beginners to accomplished pianists. My teaching approach
+          combines
+          <span className="font-semibold text-black">
+            {" "}
+            technical discipline, musical interpretation, and artistic
+            independence
+          </span>
+          .
         </p>
 
         {/* HIGHLIGHTS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 w-full">
-          
           <div className="border border-gray-200 p-6">
             <h3 className="font-semibold text-black mb-2">Performance</h3>
             <p className="text-gray-600 text-sm">
@@ -55,9 +67,7 @@ const About = () => {
               Classical repertoire, interpretation, and audition preparation.
             </p>
           </div>
-
         </div>
-
       </main>
     </div>
   );

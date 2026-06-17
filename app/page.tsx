@@ -3,11 +3,9 @@ import React from "react";
 export default function Home() {
   return (
     <div className="font-sans bg-white text-black">
-
       {/* HERO */}
       <section className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-5xl w-full text-center">
-
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Danilo Kulišić
           </h1>
@@ -17,9 +15,12 @@ export default function Home() {
           </h2>
 
           <p className="mt-8 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Concert pianist and educator focused on expressive performance,
-            technical mastery, and preparing students for conservatory auditions,
-            competitions, and professional careers.
+            Concert pianist and educator dedicated to helping students of all
+            ages and levels develop confidence, artistry, and technical
+            excellence — from adults rediscovering the piano and enthusiasts
+            learning for personal enjoyment to advanced musicians preparing for
+            conservatory auditions, ABRSM exams, competitions, and professional
+            careers.
           </p>
 
           {/* CTA BUTTONS */}
@@ -44,7 +45,6 @@ export default function Home() {
       {/* SHORT PROOF SECTION */}
       <section className="py-24 px-6 border-t border-gray-200">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center">
-
           <div>
             <h3 className="text-3xl font-bold">Performance</h3>
             <p className="mt-3 text-gray-600">
@@ -65,14 +65,12 @@ export default function Home() {
               Classical repertoire, interpretation, and technique.
             </p>
           </div>
-
         </div>
       </section>
 
       {/* PERFORMANCE PREVIEW */}
       <section id="performances" className="py-28 px-6 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-
           <h2 className="text-3xl md:text-4xl font-bold text-center">
             Performances
           </h2>
@@ -82,7 +80,6 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-
             <div className="aspect-video bg-black">
               <iframe
                 className="w-full h-full"
@@ -100,7 +97,6 @@ export default function Home() {
                 allowFullScreen
               />
             </div>
-
           </div>
         </div>
       </section>
@@ -108,14 +104,11 @@ export default function Home() {
       {/* TEACHING */}
       <section id="teaching" className="py-28 px-6">
         <div className="max-w-4xl mx-auto text-center">
-
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Piano Lessons
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Piano Lessons</h2>
 
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
-            I offer private piano lessons for all levels. My teaching is focused on
-            building strong technical foundations, musical understanding, and
+            I offer private piano lessons for all levels. My teaching is focused
+            on building strong technical foundations, musical understanding, and
             preparing students for exams, auditions, and performances.
           </p>
 
@@ -127,18 +120,14 @@ export default function Home() {
               Book a Lesson
             </a>
           </div>
-
         </div>
       </section>
 
       {/* CONTACT */}
       <section className="py-20 border-t border-gray-200 text-center">
         <h3 className="text-xl font-semibold">Contact</h3>
-        <p className="text-gray-600 mt-2">
-          Email: your@email.com
-        </p>
+        <p className="text-gray-600 mt-2">Email: your@email.com</p>
       </section>
-
     </div>
   );
 }
