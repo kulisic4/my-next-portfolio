@@ -1,12 +1,12 @@
-'use client'
-import Link from 'next/link'
-import React, { useState } from 'react'
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
 //import WeatherWidget from './WeatherWidget'
-import { Menu, X } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-black text-white font-bold p-4 flex justify-between items-center relative z-50">
@@ -28,10 +28,22 @@ export default function Navbar() {
 
       {/* Desktop links */}
       <ul className="hidden md:flex space-x-6">
-        <Link href="/" className="hover:text-sky-200">Home</Link>
-        <Link href="/about" className="hover:text-sky-200">About</Link>
-        <Link href="/projects" className="hover:text-sky-200">Editions</Link>
-        <Link href="/contact" className="hover:text-sky-200">Contact</Link>
+        <Link href="/" className="hover:text-sky-200">
+          Home
+        </Link>
+        <Link href="/about" className="hover:text-sky-200">
+          About
+        </Link>
+        <Link href="/lessons" className="hover:text-sky-200">
+          Lessons
+        </Link>
+
+        <Link href="/projects" className="hover:text-sky-200">
+          Editions
+        </Link>
+        <Link href="/contact" className="hover:text-sky-200">
+          Contact
+        </Link>
       </ul>
 
       {/* Mobile menu (dropdown) */}
@@ -45,13 +57,37 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="absolute top-16 right-4 bg-black rounded-lg shadow-lg flex flex-col space-y-4 p-6 md:hidden"
           >
-            <Link href="/" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/about" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="/projects" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Editions</Link>
-            <Link href="/contact" className="hover:text-sky-200" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link
+              href="/"
+              className="hover:text-sky-200"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="hover:text-sky-200"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="/projects"
+              className="hover:text-sky-200"
+              onClick={() => setIsOpen(false)}
+            >
+              Editions
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:text-sky-200"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
           </motion.ul>
         )}
       </AnimatePresence>
     </nav>
-  )
+  );
 }
