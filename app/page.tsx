@@ -83,7 +83,7 @@ export default function Home() {
             <div className="aspect-video bg-black">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/VIDEO_ID"
+                src="https://www.youtube.com/embed/GuGCyuynuS8"
                 title="Performance 1"
                 allowFullScreen
               />
@@ -92,7 +92,7 @@ export default function Home() {
             <div className="aspect-video bg-black">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/VIDEO_ID"
+                src="https://www.youtube.com/embed/BS4W6Jcj928"
                 title="Performance 2"
                 allowFullScreen
               />
