@@ -33,7 +33,7 @@ export default function Home() {
             </a>
 
             <a
-              href="#teaching"
+              href="/lessons"
               className="px-8 py-3 bg-black text-white hover:opacity-80 transition"
             >
               Private Lessons
@@ -114,7 +114,7 @@ export default function Home() {
 
           <div className="mt-10">
             <a
-              href="mailto:your@email.com"
+              href="/lessons"
               className="px-10 py-4 bg-black text-white hover:opacity-80 transition"
             >
               Book a Lesson
@@ -126,7 +126,7 @@ export default function Home() {
       {/* CONTACT */}
       <section className="py-20 border-t border-gray-200 text-center">
         <h3 className="text-xl font-semibold">Contact</h3>
-        <p className="text-gray-600 mt-2">Email: your@email.com</p>
+        <p className="text-gray-600 mt-2">Email: danilokulisic@gmail.com</p>
       </section>
     </div>
   );
