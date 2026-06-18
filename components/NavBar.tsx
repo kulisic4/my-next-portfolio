@@ -38,9 +38,9 @@ export default function Navbar() {
           Lessons
         </Link>
 
-        <Link href="/projects" className="hover:text-sky-200">
+        {/*<Link href="/projects" className="hover:text-sky-200">
           Editions
-        </Link>
+        </Link>*/}
         <Link href="/contact" className="hover:text-sky-200">
           Contact
         </Link>
@@ -78,13 +78,13 @@ export default function Navbar() {
             >
               Lessons
             </Link>
-            <Link
+            {/* <Link
               href="/projects"
               className="hover:text-sky-200"
               onClick={() => setIsOpen(false)}
             >
               Editions
-            </Link>
+            </Link>*/}
             <Link
               href="/contact"
               className="hover:text-sky-200"
